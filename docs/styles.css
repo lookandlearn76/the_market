@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    line-height: 2;
+}
+
+/* Nav section begins*/
+.nav {
+  float: none;
+
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #141414;
+    padding: 15px 0;
+}
+
+.navbar-fixed-top {
+  background-color: black;
+  height: 8%;
+}
+
+.collapse .navbar-inverse {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar .container-fluid {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#myNavbar {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  float: none;
+
+}
+
+.navbar-brand {
+    height: 100%;
+    width: 30%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand img {
+  height: 1.5em;
+}
+
+
+.navbar-nav {
+  float: right;
+  width: 460px;
+}
+
+.nav>li {
+  padding-right: 25px;
+  line-height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar-inverse .navbar-nav>li>a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:visited {
+    background-color: #88c039;
+    color:white;
+}
+
+/*Nav section ends*/
+
+
+
+/*mainimage and jumbotron section begins*/
+
+.mainimage {
+  background: url(./images/headerBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:40vh;
+  width: 100%;
+  position: relative;
+}
+
+.jumbotron .container {
+    max-width: 800px;
+
+}
+
+.jumbotron {
+  box-sizing: border-box;
+  background: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jumbotron p {
+  font-size: 1.1em;
+  font-weight: 100;
+  opacity: 0.8;
+  width: 70%;
+  margin-top: 3%;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron h1{
+  font-size: 2em;
+  width: 70%;
+}
+
+/*main image and jumbotron ends*/
+
+/*.row ctas section begins*/
+
+.row.content {
+    height: 450px;
+    margin-top: 0%;
+}
+
+.row .ctas {
+  margin-top: 0%;
+}
+.ctas > img {
+    padding-top: 40px;
+    margin-right: 2%;
+}
+
+/* row ctas section ends*/
+
+/* .wrapperContent section begins*/
+
+.mainContent {
+    padding: 40px;
+}
+.mainContent h1 {
+  color: #88c039;
+  margin-bottom: 3%;
+  margin-top: 5%;
+  font-size: 3.5em;
+}
+
+.mainContent h2 {
+  font-size: 1.9em;
+  margin-bottom: 4%;
+  opacity: 0.8;
+}
+
+.mainContent p {
+  font-size: .8em;
+  margin-bottom: 4%;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.wrapperContent h1, .wrapperContent h2, .wrapperContent h3, li{
+  text-transform: uppercase;
+}
+
+.columnContent {
+    padding-bottom: 60px;
+}
+
+.columnsBG {
+  background-color: #DCDCDC;
+  padding: 4%;
+}
+
+.columnsBG h3{
+  font-size: 1.5em;
+}
+
+.columnsBG p {
+  font-size: .75em;
+}
+
+/*.wrapperContent section ends*/
+
+/* footer section begins*/
+
+footer {
+    background-color: #141414;
+    color: white;
+    padding: 30px;
+}
+
+/* footer section ends*/
+
+/* media queries begin */
+
+@media screen and (min-width: 768px) {
+  .navbar-header {
+    float: none
+  }
+  .navbar .container {
+    width: 100;
+  }
+  #myNavbar {
+    width: 40%;
+    margin: 0;
+    margin-right: 20%;
+    padding: 0;
+    float: right;
+    background-color: black;
+
+  }
+  .navbar-brand {
+    float: left;
+    padding-left: 10%;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar-brand {
+    margin-left: 140px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+        padding: 10px 35px;
+        margin: 10px 35px;
+        line-height: 40px;
+    }
+
+    .nav>li{
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .jumbotron {
+      margin-top: 5%;
+    }
+    .jumbotron h1, .jumbotron p {
+      width: 100%;
+    }
+
+
+    .navbar-brand img {
+      height: 1.6em;
+      margin: 10%;
+    }
+
+    .mainimage {
+      height: 48vh;
+    }
+    .text-cemter h1 {
+      font-size:
+    }
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+    .mainContent h1 {
+      font-size: 2.5em;
+    }
+}
+/* For additional responsiveness on more random screen-sizes*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .navbar-nav {
+      margin-right: -150px;
+    }
+}
+
+/* media queries end*/
+
+
+
+
+
+
+
+
+
+
+
+
+.row img {
+  max-width: 100%;
+}
+
+.col-md-6, .col-sm-12, .col-xs-12 {
+  margin-top: 5%;
+}
